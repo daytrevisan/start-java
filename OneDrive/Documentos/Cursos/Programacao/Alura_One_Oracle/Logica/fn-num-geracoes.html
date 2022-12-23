@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+	
+function pulaLinha() {
+	document.write("<br>")
+}
+
+function mostra(calcula) {
+	document.write(calcula)
+	pulaLinha()
+}
+
+	var anoAtual = 2022
+	var anoDesc = 1500
+	var idadeGeracao = 28
+	var numGeracoes = (anoAtual - anoDesc)/idadeGeracao
+
+	mostra("Já se passaram " + Math.round(numGeracoes) + " gerações")
+
+</script>
