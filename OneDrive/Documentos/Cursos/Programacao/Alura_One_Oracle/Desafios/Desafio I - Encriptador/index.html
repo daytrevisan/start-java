@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Codificador de Texto</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');</style>
+</head>
+
+<body>
+    <header>
+        <img src="/images/logo-alura.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-box-input">
+                <textarea class="container-box-input-texto" cols="70%" rows="14%" style="resize: none">digite seu texto</textarea>
+                <p id="container-box-input-apenas">Apenas letras minúsculas e sem acento</p>
+                <div class="container-box-input-buttons">
+                    <button class="container-box-input-buttons-btencriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="container-box-input-buttons-btdesencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="container-box-mensagem">
+                <textarea class="container-box-mensagem-copiar" cols="20%" rows="18%" placeholder="Nenhuma mensagem" style="resize: none"></textarea>
+                <div id="container-box-bt">
+                    <button id="container-box-btcopiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
